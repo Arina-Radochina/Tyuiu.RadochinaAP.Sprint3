@@ -15,7 +15,7 @@ namespace Tyuiu.RadochinaAP.Sprint3.Task1.V17.Test
 
             double res = ds.GetMultiplySeries(value, startValue, stopValue);
 
-            double wait = 482982.8909094504;
+            double wait = 482982.891;
 
             Assert.AreEqual(wait, res, 0.0001);
         }

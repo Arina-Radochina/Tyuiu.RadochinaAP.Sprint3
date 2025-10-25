@@ -14,7 +14,7 @@ namespace Tyuiu.RadochinaAP.Sprint3.Task1.V17.Lib
                 k++;
             }
 
-            return Math.Round(product, 8);
+            return Math.Round(product, 3);
         }
     }
 }
