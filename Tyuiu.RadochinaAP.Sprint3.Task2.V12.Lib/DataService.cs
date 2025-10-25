@@ -10,12 +10,14 @@ namespace Tyuiu.RadochinaAP.Sprint3.Task2.V12.Lib
 
             do
             {
-                product *= Math.Pow(300.0 / i + Math.Pow(value, i), i);
+                // Формула: (300/(i + x^i))^i
+                double term = 300.0 / (i + Math.Pow(value, i));
+                product *= Math.Pow(term, i);
                 i++;
             }
             while (i <= stopValue);
 
-            return Math.Round(product / 1E+42, 3);
+            return Math.Round(product, 3);
         }
     }
 }
