@@ -1,5 +1,5 @@
-﻿using Tyuiu.RadochinaAP.Sprint3.Task0.V30.Lib;
-namespace Tyuiu.RadochinaAP.Sprint3.Task0.V30
+﻿using Tyuiu.RadochinaAP.Sprint3.Task1.V17.Lib;
+namespace Tyuiu.RadochinaAP.Sprint3.Task1.V17
 {
     class Program
     {
@@ -9,9 +9,9 @@ namespace Tyuiu.RadochinaAP.Sprint3.Task0.V30
 
             Console.WriteLine("**********************************************************************************************************");
             Console.WriteLine("* Спринт #3                                                                                              *");
-            Console.WriteLine("* Тема: Оператор цикла for                                                                  *");
-            Console.WriteLine("* Задание #0                                                                                             *");
-            Console.WriteLine("* Вариант #30                                                                                            *");
+            Console.WriteLine("* Тема: Оператор цикла while                                                              *");
+            Console.WriteLine("* Задание #1                                                                                             *");
+            Console.WriteLine("* Вариант #17                                                                                            *");
             Console.WriteLine("* Выполнила: Радочина Арина Павловна | ПИНб-25-1                                                         *");
             Console.WriteLine("**********************************************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                                               *");
@@ -22,9 +22,11 @@ namespace Tyuiu.RadochinaAP.Sprint3.Task0.V30
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                                       *");
             Console.WriteLine("**********************************************************************************************************");
 
+            int value = 1;
             int startValue = 1;
-            int stopValue = 5;
+            int stopValue = 4;
 
+            Console.WriteLine("Переменная Х = " + value);
             Console.WriteLine("Старт шага = " + startValue);
             Console.WriteLine("Конец шага = " + stopValue);
 
@@ -32,7 +34,7 @@ namespace Tyuiu.RadochinaAP.Sprint3.Task0.V30
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                             *");
             Console.WriteLine("**********************************************************************************************************");
 
-            Console.WriteLine("Сумма ряда =  " + ds.GetMultiplySeries(startValue, stopValue));
+            Console.WriteLine("Произведение ряда = " + ds.GetMultiplySeries(value, startValue, stopValue));
             Console.ReadKey();
         }
     }
